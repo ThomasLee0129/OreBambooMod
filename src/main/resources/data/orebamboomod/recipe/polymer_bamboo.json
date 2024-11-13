@@ -1,0 +1,23 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "#O#",
+    "ODO",
+    "#O#"
+  ],
+  "key": {
+    "#": {
+      "item": "minecraft:bamboo"
+    },
+    "O": {
+      "item": "orebamboomod:base_ore_bamboo"
+    },
+    "D": {
+      "item": "minecraft:diamond_block"
+    }
+  },
+  "result": {
+    "id": "orebamboomod:polymer_bamboo",
+    "count": 1
+  }
+}

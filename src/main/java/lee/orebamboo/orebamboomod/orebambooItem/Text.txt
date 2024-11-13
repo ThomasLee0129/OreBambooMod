@@ -1,0 +1,33 @@
+
+
+
+
+coal_Bamboo_Block(方塊)
+>> coal_Bamboo_Block(方塊)'''coal_Bamboo_Shoot(幼苗)
+
+coal_Bamboo_Shoot(幼苗)
+>> coal_Bamboo_Block(方塊)'''coal_Bamboo_Item(項目)
+
+coal_Bamboo_Item(項目)
+>> coal_Bamboo_Shoot(幼苗)
+
+
+coal_Bamboo_Item(項目)-> PUT
+->coal_Bamboo_Shoot(幼苗) -> grow
+-> coal_Bamboo_Block(方塊) -> coal_Bamboo_Item(項目)
+
+
+BAMBOO_SAPLING = register((String)"bamboo_sapling", new BambooShootBlock(Settings.create().mapColor(MapColor.OAK_TAN).solid().ticksRandomly().breakInstantly().noCollision().strength(1.0F).sounds(BlockSoundGroup.BAMBOO_SAPLING).offset(OffsetType.XZ).burnable().pistonBehavior(PistonBehavior.DESTROY)));
+BAMBOO = register((String)"bamboo", new BambooBlock(Settings.create().mapColor(MapColor.DARK_GREEN).solid().ticksRandomly().breakInstantly().strength(1.0F).sounds(BlockSoundGroup.BAMBOO).nonOpaque().dynamicBounds().offset(OffsetType.XZ).burnable().pistonBehavior(PistonBehavior.DESTROY).solidBlock(Blocks::never)));
+POTTED_BAMBOO = register("potted_bamboo", createFlowerPotBlock(BAMBOO));
+
+BAMBOO
+(BlockBehaviour.Properties.of().mapColor(MapColor.PLANT).forceSolidOn().randomTicks().instabreak()
+                    .strength(1.0F, 6.0F).sound(SoundType.BAMBOO).lightLevel(pLightEmission -> 8)
+                    .noOcclusion().dynamicShape().offsetType(BlockBehaviour.OffsetType.XZ).pushReaction(PushReaction.DESTROY))
+
+
+SAPLING
+(BlockBehaviour.Properties.of().mapColor(MapColor.WOOD).forceSolidOn().randomTicks().instabreak().noCollission()
+                    .strength(0.0F, 6.0F).sound(SoundType.BAMBOO_SAPLING).lightLevel(pLightEmission -> 5)
+                    .noOcclusion().offsetType(BlockBehaviour.OffsetType.XZ).pushReaction(PushReaction.DESTROY))
