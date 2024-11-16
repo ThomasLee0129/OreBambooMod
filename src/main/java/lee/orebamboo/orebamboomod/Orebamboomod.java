@@ -1,5 +1,7 @@
 package lee.orebamboo.orebamboomod;
 
+import lee.orebamboo.orebamboomod.datagen.DataLootTableGenerator;
+import lee.orebamboo.orebamboomod.datagen.Datagen;
 import lee.orebamboo.orebamboomod.orebambooitemGroup.ModItemGroup;
 import lee.orebamboo.orebamboomod.orebambooBlock.ModBlockRegister;
 import lee.orebamboo.orebamboomod.orebambooItem.ModItemRegister;
@@ -14,5 +16,6 @@ public class Orebamboomod implements ModInitializer {
         ModItemRegister.initialize();
         ModBlockRegister.initialize();
         ModItemGroup.initialize();
+
     }
 }

@@ -16,7 +16,7 @@ import org.jetbrains.annotations.Nullable;
 
 public class ModOreBamboo extends BambooBlock {
 
-    public Enum bambooOreType;
+    public Enum<GetBamooType.bambooType> bambooOreType;
 
     public Block getOrebambooblock(){
         return GetBamooType.getBambooType(bambooOreType);
@@ -25,7 +25,7 @@ public class ModOreBamboo extends BambooBlock {
         return GetBamooType.getBambooSaplingType(bambooOreType);
     }
 
-    public ModOreBamboo(AbstractBlock.Settings settings,Enum OreType){
+    public ModOreBamboo(AbstractBlock.Settings settings,Enum<GetBamooType.bambooType> OreType){
         super(settings);
         bambooOreType = OreType;
         this.setDefaultState((BlockState) ((BlockState)((BlockState)((BlockState)this.stateManager.getDefaultState()).with(AGE, 0)).with(LEAVES, BambooLeaves.NONE)).with(STAGE, 0));

@@ -1,0 +1,6 @@
+{
+  "parent": "item/generated",
+  "textures": {
+    "layer0": "orebamboomod:item/lapis_lazuli_bamboo_item"
+  }
+}
