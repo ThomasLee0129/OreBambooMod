@@ -1,0 +1,17 @@
+{
+    "type": "minecraft:crafting_shaped",
+    "pattern": [
+        "###",
+        "# #",
+        "###"
+    ],
+    "key": {
+        "#": {
+            "item": "orebamboomod:gold_bamboo_item"
+        }
+    },
+    "result": {
+        "id": "minecraft:gold_ingot",
+        "count": 2
+    }
+}

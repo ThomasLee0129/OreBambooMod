@@ -2,5 +2,12 @@
   "itemGroup.ore_bamboo_mod": "Ore Bamboo Mod",
   "item.orebamboomod.base_ore_bamboo": "基礎礦物竹子",
   "item.orebamboomod.polymer_bamboo": "竹子聚合物",
-  "item.orebamboomod.coal_bamboo_item": "煤炭竹子"
+  "block.orebamboomod.coal_bamboo_sapling": "煤炭竹子",
+  "block.orebamboomod.copper_bamboo_sapling": "銅竹子",
+  "block.orebamboomod.iron_bamboo_sapling": "鐵竹子",
+  "block.orebamboomod.gold_bamboo_sapling": "金竹子",
+  "block.orebamboomod.diamond_bamboo_sapling": "鑽石竹子",
+  "block.orebamboomod.netherite_bamboo_sapling": "獄髓竹子",
+  "block.orebamboomod.emerald_bamboo_sapling": "綠寶石竹子",
+  "block.orebamboomod.lapis_lazuli_bamboo_sapling": "青金石竹子"
 }

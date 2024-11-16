@@ -1,0 +1,17 @@
+{
+    "type": "minecraft:crafting_shaped",
+    "pattern": [
+        "###",
+        "# #",
+        "###"
+    ],
+    "key": {
+        "#": {
+            "item": "orebamboomod:diamond_bamboo_item"
+        }
+    },
+    "result": {
+        "id": "minecraft:diamond",
+        "count": 1
+    }
+}

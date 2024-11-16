@@ -1,0 +1,16 @@
+{
+    "type": "minecraft:crafting_shaped",
+    "pattern": [
+        "##",
+        "##"
+    ],
+    "key": {
+        "#": {
+            "item": "orebamboomod:lapis_lazuli_bamboo_item"
+        }
+    },
+    "result": {
+        "id": "minecraft:lapis_lazuli",
+        "count": 4
+    }
+}

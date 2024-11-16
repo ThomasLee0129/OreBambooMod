@@ -1,0 +1,26 @@
+{
+    "type": "minecraft:crafting_shaped",
+    "pattern": [
+        "#B#",
+        "C#C",
+        "#M#"
+    ],
+    "key": {
+        "#": {
+            "item": "orebamboomod:polymer_bamboo"
+        },
+        "B": {
+            "item": "orebamboomod:coal_bamboo_item"
+        },
+        "C": {
+            "item": "orebamboomod:base_ore_bamboo"
+        },
+        "M": {
+            "item": "minecraft:lapis_block"
+        }
+    },
+    "result": {
+        "id": "orebamboomod:lapis_lazuli_bamboo_item",
+        "count": 1
+    }
+}

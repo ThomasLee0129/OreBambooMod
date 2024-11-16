@@ -1,0 +1,17 @@
+{
+    "type": "minecraft:crafting_shaped",
+    "pattern": [
+        "###",
+        "###",
+        "###"
+    ],
+    "key": {
+        "#": {
+            "item": "orebamboomod:netherite_bamboo_item"
+        }
+    },
+    "result": {
+        "id": "minecraft:netherite_scrap",
+        "count": 1
+    }
+}

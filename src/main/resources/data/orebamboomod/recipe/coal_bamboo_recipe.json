@@ -1,0 +1,26 @@
+{
+    "type": "minecraft:crafting_shaped",
+    "pattern": [
+        "#B#",
+        "C#C",
+        "#M#"
+    ],
+    "key": {
+        "#": {
+            "item": "orebamboomod:polymer_bamboo"
+        },
+        "B": {
+            "item": "minecraft:bamboo"
+        },
+        "C": {
+            "item": "orebamboomod:base_ore_bamboo"
+        },
+        "M": {
+            "item": "minecraft:coal_block"
+        }
+    },
+    "result": {
+        "id": "orebamboomod:coal_bamboo_item",
+        "count": 1
+    }
+}

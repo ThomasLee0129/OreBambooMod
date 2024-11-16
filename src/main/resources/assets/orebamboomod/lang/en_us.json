@@ -2,5 +2,12 @@
   "itemGroup.ore_bamboo_mod": "Ore Bamboo Mod",
   "item.orebamboomod.base_ore_bamboo": "Base Ore Bamboo",
   "item.orebamboomod.polymer_bamboo": "Polymer Bamboo",
-  "item.orebamboomod.coal_bamboo_item": "coal_bamboo"
+  "block.orebamboomod.coal_bamboo_sapling": "coal bamboo",
+  "block.orebamboomod.copper_bamboo_sapling": "copper bamboo",
+  "block.orebamboomod.iron_bamboo_sapling": "iron bamboo",
+  "block.orebamboomod.gold_bamboo_sapling": "gold bamboo",
+  "block.orebamboomod.diamond_bamboo_sapling": "diamond bamboo",
+  "block.orebamboomod.netherite_bamboo_sapling": "netherite bamboo",
+  "block.orebamboomod.emerald_bamboo_sapling": "emerald bamboo",
+  "block.orebamboomod.lapis_lazuli_bamboo_sapling": "lapis lazuli bamboo"
 }
