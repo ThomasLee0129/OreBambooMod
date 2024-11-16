@@ -1,7 +1,6 @@
 package lee.orebamboo.orebamboomod.orebambooBlock;
 
 import com.mojang.serialization.MapCodec;
-import lee.orebamboo.orebamboomod.orebambooItem.ModItemRegister;
 import lee.orebamboo.orebamboomod.util.OreBambooTag;
 import net.minecraft.block.*;
 import net.minecraft.block.enums.BambooLeaves;
@@ -15,12 +14,12 @@ import net.minecraft.world.WorldView;
 
 public class ModOreBambooShootBlock extends BambooShootBlock {
 
-    public static Enum bambooOreType;
+    public Enum bambooOreType;
 
-    public static Block getOrebambooblock(){
+    public Block getOrebambooblock(){
         return GetBamooType.getBambooType(bambooOreType);
     }
-    public static Item getorebambooshootitem() {
+    public Item getorebambooshootitem() {
         return GetBamooType.getBambooItem(bambooOreType);
     }
 

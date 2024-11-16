@@ -19,72 +19,45 @@ public class GetBamooType {
 
 
     public static Block getBambooType(Enum type){
-        switch (type){
-            case bambooType.BAMBOO_COAL:
-                return ModBlockRegister.COAL_BAMBOO;
-            case bambooType.BAMBOO_COPPER:
-                return ModBlockRegister.COPPER_BMABOO;
-            case bambooType.BAMBOO_IRON:
-                return ModBlockRegister.IRON_BMABOO;
-            case bambooType.BAMBOO_GOLD:
-                return ModBlockRegister.GOLD_BMABOO;
-            case bambooType.BAMBOO_DIAMOND:
-                return ModBlockRegister.DIAMOND_BMABOO;
-            case bambooType.BAMBOO_NETHERITE:
-                return ModBlockRegister.NETHERITE_BMABOO;
-            case bambooType.BAMBOO_EMERALD:
-                return ModBlockRegister.EMERALD_BMABOO;
-            case bambooType.BAMBOO_LAPIS_LAZULI:
-                return ModBlockRegister.LAPIS_LAZULI_BMABOO;
-            default:
-                return null;
-        }
+        return switch (type) {
+            case bambooType.BAMBOO_COAL -> ModBlockRegister.COAL_BAMBOO;
+            case bambooType.BAMBOO_COPPER -> ModBlockRegister.COPPER_BMABOO;
+            case bambooType.BAMBOO_IRON -> ModBlockRegister.IRON_BMABOO;
+            case bambooType.BAMBOO_GOLD -> ModBlockRegister.GOLD_BMABOO;
+            case bambooType.BAMBOO_DIAMOND -> ModBlockRegister.DIAMOND_BMABOO;
+            case bambooType.BAMBOO_NETHERITE -> ModBlockRegister.NETHERITE_BMABOO;
+            case bambooType.BAMBOO_EMERALD -> ModBlockRegister.EMERALD_BMABOO;
+            case bambooType.BAMBOO_LAPIS_LAZULI -> ModBlockRegister.LAPIS_LAZULI_BMABOO;
+            default -> null;
+        };
 
     }
 
     public static Block getBambooSaplingType(Enum type){
-        switch (type){
-            case bambooType.BAMBOO_COAL:
-                return ModBlockRegister.COAL_BAMBOO_SAPLING;
-            case bambooType.BAMBOO_COPPER:
-                return ModBlockRegister.COPPER_BMABOO_SAPLING;
-            case bambooType.BAMBOO_IRON:
-                return ModBlockRegister.IRON_BMABOO_SAPLING;
-            case bambooType.BAMBOO_GOLD:
-                return ModBlockRegister.GOLD_BMABOO_SAPLING;
-            case bambooType.BAMBOO_DIAMOND:
-                return ModBlockRegister.DIAMOND_BMABOO_SAPLING;
-            case bambooType.BAMBOO_NETHERITE:
-                return ModBlockRegister.NETHERITE_BMABOO_SAPLING;
-            case bambooType.BAMBOO_EMERALD:
-                return ModBlockRegister.EMERALD_BMABOO_SAPLING;
-            case bambooType.BAMBOO_LAPIS_LAZULI:
-                return ModBlockRegister.LAPIS_LAZULI_BMABOO_SAPLING;
-            default:
-                return null;
-        }
+        return switch (type) {
+            case bambooType.BAMBOO_COAL -> ModBlockRegister.COAL_BAMBOO_SAPLING;
+            case bambooType.BAMBOO_COPPER -> ModBlockRegister.COPPER_BMABOO_SAPLING;
+            case bambooType.BAMBOO_IRON -> ModBlockRegister.IRON_BMABOO_SAPLING;
+            case bambooType.BAMBOO_GOLD -> ModBlockRegister.GOLD_BMABOO_SAPLING;
+            case bambooType.BAMBOO_DIAMOND -> ModBlockRegister.DIAMOND_BMABOO_SAPLING;
+            case bambooType.BAMBOO_NETHERITE -> ModBlockRegister.NETHERITE_BMABOO_SAPLING;
+            case bambooType.BAMBOO_EMERALD -> ModBlockRegister.EMERALD_BMABOO_SAPLING;
+            case bambooType.BAMBOO_LAPIS_LAZULI -> ModBlockRegister.LAPIS_LAZULI_BMABOO_SAPLING;
+            default -> null;
+        };
     }
 
     public static Item getBambooItem(Enum type){
-        switch (type){
-            case bambooType.BAMBOO_COAL:
-                return ModItemRegister.COAL_BAMBOO_ITEM;
-            case bambooType.BAMBOO_COPPER:
-                return ModItemRegister.COPPER_BAMBOO_ITEM;
-            case bambooType.BAMBOO_IRON:
-                return ModItemRegister.IRON_BAMBOO_ITEM;
-            case bambooType.BAMBOO_GOLD:
-                return ModItemRegister.GOLD_BAMBOO_ITEM;
-            case bambooType.BAMBOO_DIAMOND:
-                return ModItemRegister.DIAMOND_BAMBOO_ITEM;
-            case bambooType.BAMBOO_NETHERITE:
-                return ModItemRegister.NETHERITE_BAMBOO_ITEM;
-            case bambooType.BAMBOO_EMERALD:
-                return ModItemRegister.EMERALD_BAMBOO_ITEM;
-            case bambooType.BAMBOO_LAPIS_LAZULI:
-                return ModItemRegister.LAPIS_LAZULI_BAMBOO_ITEM;
-            default:
-                return null;
-        }
+        return switch (type) {
+            case bambooType.BAMBOO_COAL -> ModItemRegister.COAL_BAMBOO_ITEM;
+            case bambooType.BAMBOO_COPPER -> ModItemRegister.COPPER_BAMBOO_ITEM;
+            case bambooType.BAMBOO_IRON -> ModItemRegister.IRON_BAMBOO_ITEM;
+            case bambooType.BAMBOO_GOLD -> ModItemRegister.GOLD_BAMBOO_ITEM;
+            case bambooType.BAMBOO_DIAMOND -> ModItemRegister.DIAMOND_BAMBOO_ITEM;
+            case bambooType.BAMBOO_NETHERITE -> ModItemRegister.NETHERITE_BAMBOO_ITEM;
+            case bambooType.BAMBOO_EMERALD -> ModItemRegister.EMERALD_BAMBOO_ITEM;
+            case bambooType.BAMBOO_LAPIS_LAZULI -> ModItemRegister.LAPIS_LAZULI_BAMBOO_ITEM;
+            default -> null;
+        };
     }
 }
