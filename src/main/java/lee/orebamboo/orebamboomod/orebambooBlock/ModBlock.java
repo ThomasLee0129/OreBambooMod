@@ -20,18 +20,20 @@ public class ModBlock {
         return Registry.register(Registries.BLOCK,id,block);
     }
 
-
+/*
     public static Block register_ore_bamboo(ModOreBamboo block,String name,Block bamboo_block,Block sapling){
         Identifier id = Identifier.of(Orebamboomod.MOD_ID,name);
-        block.orebambooblock = bamboo_block;
-        block.orebambooshootblock = sapling;
+        //block.orebambooblock = bamboo_block;
+        //block.orebamboosaplingblock = sapling;
         return Registry.register(Registries.BLOCK,id,block);
     }
 
     public static Block register_ore_bamboo_sapling(ModOreBambooShootBlock block,String name,Block sapling,Item item){
         Identifier id = Identifier.of(Orebamboomod.MOD_ID,name);
-        block.orebambooblock = sapling;
-        block.orebambooshootitem = item;
+        //block.orebambooblock = sapling;
+        //block.orebambooshootitem = item;
         return Registry.register(Registries.BLOCK,id,block);
     }
+
+ */
 }

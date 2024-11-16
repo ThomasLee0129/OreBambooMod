@@ -28,6 +28,13 @@ public class ModItemGroup {
                 itemGroup.add(ModItemRegister.BASE_ORE_BAMBOO);
                 itemGroup.add(ModItemRegister.POLYMER_BAMBOO);
                 itemGroup.add(ModItemRegister.COAL_BAMBOO_ITEM);
+                itemGroup.add(ModItemRegister.COPPER_BAMBOO_ITEM);
+                itemGroup.add(ModItemRegister.IRON_BAMBOO_ITEM);
+                itemGroup.add(ModItemRegister.GOLD_BAMBOO_ITEM);
+                itemGroup.add(ModItemRegister.DIAMOND_BAMBOO_ITEM);
+                itemGroup.add(ModItemRegister.NETHERITE_BAMBOO_ITEM);
+                itemGroup.add(ModItemRegister.EMERALD_BAMBOO_ITEM);
+                itemGroup.add(ModItemRegister.LAPIS_LAZULI_BAMBOO_ITEM);
             }
         );
     }

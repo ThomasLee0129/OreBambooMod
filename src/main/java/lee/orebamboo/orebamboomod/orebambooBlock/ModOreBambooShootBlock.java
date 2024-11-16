@@ -12,21 +12,26 @@ import net.minecraft.util.math.Direction;
 import net.minecraft.world.World;
 import net.minecraft.world.WorldAccess;
 import net.minecraft.world.WorldView;
-import org.jetbrains.annotations.Nullable;
 
 public class ModOreBambooShootBlock extends BambooShootBlock {
-    public Block orebambooblock = ModBlockRegister.COAL_BAMBOO;
-    public Item orebambooshootitem = ModItemRegister.COAL_BAMBOO_ITEM;
 
-    public static final MapCodec<BambooShootBlock> CODEC = createCodec(ModOreBambooShootBlock::new);
+    public static Enum bambooOreType;
+
+    public static Block getOrebambooblock(){
+        return GetBamooType.getBambooType(bambooOreType);
+    }
+    public static Item getorebambooshootitem() {
+        return GetBamooType.getBambooItem(bambooOreType);
+    }
 
     @Override
     public MapCodec<BambooShootBlock> getCodec() {
         return CODEC;
     }
 
-    public ModOreBambooShootBlock(Settings settings) {
+    public ModOreBambooShootBlock(Settings settings,Enum OreType) {
         super(settings);
+        bambooOreType = OreType;
     }
 
     @Override
@@ -40,8 +45,8 @@ public class ModOreBambooShootBlock extends BambooShootBlock {
         if (!state.canPlaceAt(world, pos)) {
             return Blocks.AIR.getDefaultState();
         } else {
-            if (direction == Direction.UP && neighborState.isOf(orebambooblock)) {
-                world.setBlockState(pos, orebambooblock.getDefaultState(), 2);
+            if (direction == Direction.UP && neighborState.isOf(getOrebambooblock())) {
+                world.setBlockState(pos, getOrebambooblock().getDefaultState(), 2);
             }
 
             return super.getStateForNeighborUpdate(state, direction, neighborState, world, pos, neighborPos);
@@ -50,11 +55,11 @@ public class ModOreBambooShootBlock extends BambooShootBlock {
 
     @Override
     public ItemStack getPickStack(WorldView world, BlockPos pos, BlockState state) {
-        return new ItemStack(orebambooshootitem);
+        return new ItemStack(getorebambooshootitem());
     }
 
     @Override
     protected void grow(World world, BlockPos pos) {
-        world.setBlockState(pos.up(), (BlockState)orebambooblock.getDefaultState().with(ModOreBamboo.LEAVES, BambooLeaves.SMALL), 3);
+        world.setBlockState(pos.up(), (BlockState)getOrebambooblock().getDefaultState().with(ModOreBamboo.LEAVES, BambooLeaves.SMALL), 3);
     }
 }
