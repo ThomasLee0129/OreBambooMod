@@ -1,0 +1,6 @@
+{
+  "parent": "minecraft:block/tinted_cross",
+  "textures": {
+    "cross": "orebamboomod:block/emerald_bamboo_stage0"
+  }
+}

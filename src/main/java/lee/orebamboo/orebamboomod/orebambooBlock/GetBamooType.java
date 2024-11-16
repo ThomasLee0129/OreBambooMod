@@ -18,7 +18,7 @@ public class GetBamooType {
     }
 
 
-    public static Block getBambooType(Enum type){
+    public static Block getBambooType(Enum<bambooType> type){
         return switch (type) {
             case bambooType.BAMBOO_COAL -> ModBlockRegister.COAL_BAMBOO;
             case bambooType.BAMBOO_COPPER -> ModBlockRegister.COPPER_BMABOO;
@@ -33,7 +33,7 @@ public class GetBamooType {
 
     }
 
-    public static Block getBambooSaplingType(Enum type){
+    public static Block getBambooSaplingType(Enum<bambooType> type){
         return switch (type) {
             case bambooType.BAMBOO_COAL -> ModBlockRegister.COAL_BAMBOO_SAPLING;
             case bambooType.BAMBOO_COPPER -> ModBlockRegister.COPPER_BMABOO_SAPLING;
@@ -47,7 +47,7 @@ public class GetBamooType {
         };
     }
 
-    public static Item getBambooItem(Enum type){
+    public static Item getBambooItem(Enum<bambooType> type){
         return switch (type) {
             case bambooType.BAMBOO_COAL -> ModItemRegister.COAL_BAMBOO_ITEM;
             case bambooType.BAMBOO_COPPER -> ModItemRegister.COPPER_BAMBOO_ITEM;

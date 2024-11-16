@@ -4,6 +4,28 @@
     "#minecraft:dirt",
     "orebamboomod:coal_bamboo_sapling",
     "orebamboomod:coal_bamboo",
+
+    "orebamboomod:copper_bamboo_sapling",
+    "orebamboomod:copper_bamboo",
+
+    "orebamboomod:iron_bamboo_sapling",
+    "orebamboomod:iron_bamboo",
+
+    "orebamboomod:gold_bamboo_sapling",
+    "orebamboomod:gold_bamboo",
+
+    "orebamboomod:diamond_bamboo_sapling",
+    "orebamboomod:diamond_bamboo",
+
+    "orebamboomod:netherite_bamboo_sapling",
+    "orebamboomod:netherite_bamboo",
+
+    "orebamboomod:emerald_bamboo_sapling",
+    "orebamboomod:emerald_bamboo",
+
+    "orebamboomod:lapis_lazuli_bamboo_sapling",
+    "orebamboomod:lapis_lazuli_bamboo",
+
     "minecraft:gravel",
     "minecraft:suspicious_gravel"
   ]

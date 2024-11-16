@@ -14,7 +14,7 @@ import net.minecraft.world.WorldView;
 
 public class ModOreBambooShootBlock extends BambooShootBlock {
 
-    public Enum bambooOreType;
+    public Enum<GetBamooType.bambooType> bambooOreType;
 
     public Block getOrebambooblock(){
         return GetBamooType.getBambooType(bambooOreType);
@@ -28,7 +28,7 @@ public class ModOreBambooShootBlock extends BambooShootBlock {
         return CODEC;
     }
 
-    public ModOreBambooShootBlock(Settings settings,Enum OreType) {
+    public ModOreBambooShootBlock(Settings settings,Enum<GetBamooType.bambooType> OreType) {
         super(settings);
         bambooOreType = OreType;
     }

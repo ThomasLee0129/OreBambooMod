@@ -16,12 +16,12 @@ import org.jetbrains.annotations.Nullable;
 
 public class ModOreBamboo extends BambooBlock {
 
-    public static Enum bambooOreType;
+    public Enum bambooOreType;
 
-    public static Block getOrebambooblock(){
+    public Block getOrebambooblock(){
         return GetBamooType.getBambooType(bambooOreType);
     }
-    public static Block getOrebamboosaplingblock(){
+    public Block getOrebamboosaplingblock(){
         return GetBamooType.getBambooSaplingType(bambooOreType);
     }
 
